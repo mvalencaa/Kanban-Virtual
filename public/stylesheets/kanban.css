@@ -1,0 +1,100 @@
+body {
+	background-color:#2E8B57;
+}
+
+#kanban {
+	text-align:center;
+}
+
+.column {
+	min-height:700px;
+	width:23%;
+	background-color:#F5DEB3;
+	margin:5px;
+	padding:5px;
+	border:2px solid;
+	border-radius:25px;
+	-webkit-border-radius:25px; /* Safari */
+	float:left;
+}
+
+.column-active {
+	background-color:#FAFAD2;
+}
+
+.history {
+	background-color:#FFFAFA;
+	cursor:move;
+}
+
+.history .body {
+	min-height:212px;
+	min-width:307px;
+}
+
+.postit .estimate {
+	position:absolute;
+	right:5px;
+	bottom:1px;
+}
+
+.history .footer {
+	border-top:1px solid;
+}
+
+.history .title {
+	background-color:#DCDCDC;
+}
+
+.history .title .maximized {
+//adicionar imagem
+}
+
+.history .title .minimized {
+//adicionar imagem
+}
+
+.history .title .addPostit {
+	float:left;
+	cursor:pointer;
+}
+
+.history .title .remove, .history .title .state {
+	float:right;
+	cursor:pointer;
+}
+
+.postit {
+	height:80px;
+	width:125px;
+	background-color:#EEEE00;
+	margin:8px;
+	padding:5px;
+	display:inline-block;
+	word-wrap:break-word;
+	text-overflow:ellipsis;
+}
+
+.postit:hover {
+	cursor:move;
+}
+
+.postit input {
+	background-color: #EEEE00;
+	border: none;
+	height: 80px;
+	outline-color: transparent;
+	width: 125px;
+	text-align:center;
+}
+
+.postit-active {
+	background-color:#FFA500;
+}
+
+.postit .remove {
+	position:absolute;
+	right:5px;
+	top:1px;
+	cursor:pointer;
+}

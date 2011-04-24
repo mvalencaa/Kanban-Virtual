@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  content: MyText
+  history_id: 1
+  estimate: 1
+
+two:
+  content: MyText
+  history_id: 1
+  estimate: 1

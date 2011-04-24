@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="kanban.css" />
+	</head>
+	<body>
+		<div id="kanban">
+			<h1> Kanban Online </h1>
+
+			<button id="addHistory" type="button"> New History </button> <br />
+
+			<div id="backlog" class="column">
+				<h3 class="subtitle"> Backlog </h3>
+				<div class="histories">
+					<!--					
+					<div class="history">
+						<div class="title">
+							Titulo da Historia 1
+							<span class="remove"> x </span>
+							<span class="state maximized"> + </span>
+						</div>
+						<div class="body">
+							<div class="postit">
+								<span class="remove"> x </span>
+								Algum conteudo aqui!!!
+								<span class="estimate"> 5 </span>
+							</div>
+							<div class="postit">
+								<span class="remove"> x </span>
+								Algum conteudo aqui!!!
+								<span class="estimate"> 4 </span>
+							</div>
+							<div class="postit">
+								<span class="remove"> x </span>
+								Algum conteudo aqui!!!
+								<span class="estimate"> 1 </span>
+							</div>
+							<span class="estimate"> 10 </span>
+						</div>
+					</div>
+					-->
+				</div>
+			</div>
+
+			<div id="sprint" class="column">
+				<h3 class="subtitle"> Sprint </h3>
+				<div class="histories"></div>
+			</div>
+
+			<div id="doing" class="column">
+				<h3 class="subtitle"> Doing </h3>
+				<div class="histories"></div>
+			</div>
+
+			<div id="done" class="column">
+				<h3 class="subtitle"> Done </h3>
+				<div class="histories"></div>
+			</div>
+		</div>
+	</body>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type="text/javascript"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="jeditable.js" type="text/javascript"></script>
+	<script src="kanban.js" type="text/javascript"></script>
+</html>

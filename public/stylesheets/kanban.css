@@ -22,6 +22,10 @@ body {
 	background-color:#FAFAD2;
 }
 
+.column .subtitle {
+	margin:5px 0;
+}
+
 .history {
 	background-color:#FFFAFA;
 	cursor:move;

@@ -11,19 +11,6 @@ $("#addHistory").click(function() {
 $(".column").droppable({hoverClass: "column-active"});
 
 function addHistory() {
-	var date = new Date();
-
-	day = date.getUTCDate();
-	month = date.getMonth() + 1;
-	year = date.getFullYear();
-
-	hour = date.getHours();
-	minute = date.getMinutes();
-	second = date.getSeconds();
-
-	date = day + "/" + month + "/" + year;
-	time = hour + ":" + minute + ":" + second;
-
 	var newHistory = "<div class='history'> \
 											<div class='title'> \
 												Titulo da Historia \
@@ -34,10 +21,10 @@ function addHistory() {
 											<div class='body'> \
 											</div> \
 											<div class='footer'> \
-												<span class='creationDate'> " + date + ", " + time + " - </span> \
+												<span class='creationDate'> 01/01/2011 - </span> \
 												<span class='estimate'> 13 (Somatorio dos pontos) </span> \
 											</div> \
-										</div>";
+										</div>"
 
 	$("#backlog .histories").prepend(newHistory);
 }
@@ -47,7 +34,7 @@ function addPostit(addPostitButton) {
 										<span class='remove'> x </span> \
 										Algum conteudo aqui!!! \
 										<span class='estimate'> 7 </span> \
-									 </div>";
+									 </div>"
 
 	$(addPostitButton).parents(".history").children(".body").prepend(newPostit);
 }

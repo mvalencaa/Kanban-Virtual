@@ -3,12 +3,24 @@
 <head>
   <title>Kanban</title>
   <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
+  <%= javascript_include_tag :defaults, 'kanban.js' %>
   <%= csrf_meta_tag %>
 </head>
 <body>
 
-<%= yield %>
+	<div id="kanban">
+		<h1> Kanban Online </h1>
+
+		<button id="addHistory" type="button"> Nova História </button> <br />
+
+		<%= render :partial => 'backlog' %>
+		<%= render :partial => 'sprint' %>
+		<%= render :partial => 'doing' %>
+		<%= render :partial => 'done' %>
+
+	</div>
+
+	<%= yield %>
 
 </body>
 </html>

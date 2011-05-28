@@ -1,7 +1,12 @@
 class HistoryController < ApplicationController
 
 	def new
-		render :text => "Funfou!"
+	end
+
+	def create
+		history = History.new params[:history]
+
+		history.save!
 	end
 
 end

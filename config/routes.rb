@@ -1,6 +1,6 @@
 Kanban::Application.routes.draw do
 
-	resource :history, :only => [:new]
+	resource :history
 	match 'home(/:action)' => 'home#index'
 
 	root :to => 'home#index'

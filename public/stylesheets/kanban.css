@@ -46,29 +46,39 @@ body {
 	border-top:1px solid;
 }
 
-.history .title {
+.history .header {
+	position:relative;
 	background-color:#DCDCDC;
 }
 
-.history .title .maximized {
-//adicionar imagem
+.history .header .maximized {
+	position:absolute;
 }
 
-.history .title .minimized {
-//adicionar imagem
+.history .header .minimized {
+	position:absolute;
 }
 
-.history .title .addPostit {
-	float:left;
+.history .header .addPostit {
+	position:absolute;
+	left:2px;
 	cursor:pointer;
 }
 
-.history .title .remove, .history .title .state {
-	float:right;
+.history .header .remove {
+	position:absolute;
+	right:2px;
+	cursor:pointer;
+}
+
+.history .header .state {
+	position:absolute;
+	right:20px;
 	cursor:pointer;
 }
 
 .postit {
+	position:relative;
 	height:80px;
 	width:125px;
 	background-color:#EEEE00;
@@ -96,9 +106,14 @@ body {
 	background-color:#FFA500;
 }
 
+.postit .estimate {
+	position:absolute;;
+	bottom:-2px;
+	right:3px;
+}
 .postit .remove {
 	position:absolute;
-	right:5px;
+	right:2px;
 	top:1px;
 	cursor:pointer;
 }
